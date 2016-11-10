@@ -1,3 +1,4 @@
+declare
 fun {Prime N}
   local
     fun {Prime1 A B}

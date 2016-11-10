@@ -1,0 +1,17 @@
+fun {Fib N}
+    local FibAux in
+        fun {FibAux N Acc1 Acc2}
+          local
+            fun{FibFrom A Max Minus Minuss}
+		          if A==Max then Minus+Minuss
+		          else {FibFrom A+1 Max Minus+Minuss Minus} end
+	          end
+          in
+	          if N==0 then Acc1
+	          elseif N==1 then Acc2
+	          else {FibFrom 2 N Acc2 Acc1} end
+          end
+        end
+      {FibAux N 0 1}
+    end
+end

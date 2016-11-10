@@ -1,6 +1,0 @@
-% ([({Browse N}, {N==>n, Browse==>b})],
-%  {m=10, n=15, t=5, a=(proc{* R S}S=R+T end, {T==>t}), b=(proc ...)})
-
-%%% Explication %%%
-% On applique la fonction Add5 qui pointe vers la variable a dans la memoire.
-% Cela va modifier la valeur de n dans la memoire par : n=m+t=15

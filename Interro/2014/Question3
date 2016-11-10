@@ -1,0 +1,15 @@
+declare
+fun{Penuldeux L}
+   local
+      A1 A2
+      fun{Yolo L}
+	 case L
+	 of H1|H2|nil then H1
+	 [] H|T then {Yolo T}
+	 end
+      end
+   in
+      L.2.1+{Yolo L}
+   end
+end
+{Browse {Penuldeux [1 2 3 4]}}

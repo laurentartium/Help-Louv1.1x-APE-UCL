@@ -1,0 +1,12 @@
+fun {Prime N}
+  local
+    fun {Prime1 A B}
+      if A==1 then true
+      elseif (B mod A) == 0 then false
+      else {Prime1 A-1 B} end
+    end
+  in
+    if N==1 then false
+    else {Prime1 N-1 N} end
+  end
+end

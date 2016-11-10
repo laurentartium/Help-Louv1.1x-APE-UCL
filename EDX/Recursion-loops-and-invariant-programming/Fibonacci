@@ -1,3 +1,4 @@
+declare
 fun {Fib N}
     local FibAux in
         fun {FibAux N Acc1 Acc2}

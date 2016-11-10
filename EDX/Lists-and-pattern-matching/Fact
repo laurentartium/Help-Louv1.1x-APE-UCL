@@ -1,0 +1,12 @@
+declare
+fun{Fact N}
+  local
+    fun{Fact2 Acc1 Acc2}
+        if Acc2==N+1 then Acc1|nil
+        else Acc1|{Fact2 Acc1*Acc2 Acc2+1} end
+    end
+  in
+    if N==0 then 1
+    else {Fact2 1 2} end
+  end
+end
